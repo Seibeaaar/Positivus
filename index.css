@@ -8,6 +8,12 @@
 
 body {
     font-family: "Space Grotesk", sans-serif;
+    padding: 64px 100px 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
 }
 
 :root {
@@ -15,6 +21,7 @@ body {
     --primary: #B9FF66;
     --dark: #191A23;
     --gray: #F3F3F3;
+    --white: #FFF;
     /* Font-size (desktop) */
     --h1-desk: 60px;
     --h2-desk: 40px;
@@ -32,4 +39,64 @@ body {
     --semibold: 600;
     --regular: 400;
     --thin: 300;
+}
+
+.centered-flex {
+    display: flex;
+    align-items: center;
+}
+
+#header {
+    justify-content: space-between;
+}
+
+.header-logo {
+    gap: 8px;
+}
+
+.header-logo__image {
+    width: 36px;
+    height: 36px;
+}
+
+.header-logo__name {
+    font-size: var(--h3-desk);
+    font-weight: var(--bold);
+}
+
+.header-action {
+    border-radius: 14px;
+    border: 1px solid var(--dark);
+    padding: 20px 35px;
+    transition: all ease .5s;
+}
+
+.header-action:hover {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.header-navigation__link {
+    font-size: var(--h4-desk);
+    margin-right: 40px;
+    position: relative;
+    display: block;
+}
+
+
+.header-navigation__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 24px;
+    height: 2px;
+    background-color: var(--dark);
+    width: 100%;
+    transition: all ease .5s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.header-navigation__link:hover::after {
+    transform: scaleX(1);
 }
