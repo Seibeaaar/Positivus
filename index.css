@@ -1,51 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Space Grotesk", sans-serif;
-    padding: 64px 100px 0;
-}
-
-a {
-    text-decoration: none;
-    color: var(--dark);
-    display: block;
-}
-
-:root {
-    /* Colors */
-    --primary: #B9FF66;
-    --dark: #191A23;
-    --gray: #F3F3F3;
-    --white: #FFF;
-    /* Font-size (desktop) */
-    --h1-desk: 60px;
-    --h2-desk: 40px;
-    --h3-desk: 30px;
-    --h4-desk: 20px;
-    --p-desk: 18px;
-    /* Font-size (mobile) */
-    --h1-mob: 42px;
-    --h2-mob: 36px;
-    --h3-mob: 26px;
-    --h4-mob: 18px;
-    --p-mob: 16px;
-    /* Font weight */
-    --bold: 700;
-    --semibold: 600;
-    --regular: 400;
-    --thin: 300;
-}
-
-.centered-flex {
-    display: flex;
-    align-items: center;
-}
+@import url('./common.css');
 
 #hero {
     height: 100vh;
@@ -142,13 +95,70 @@ a {
 }
 
 .section-header {
+    margin-bottom: 40px;
+    gap: 24px;
+}
+
+.section-header__title {
     background-color: var(--primary);
     border-radius: 7px;
     padding: 7px 10px;
     width: fit-content;
-    margin-bottom: 40px;
 }
 
 .partner-list {
     justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.section-header__info {
+    max-width: 580px;
+}
+
+.service-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+.service-item {
+    border: 1px solid var(--dark);
+    border-radius: 45px;
+    padding: 50px;
+    justify-content: space-between;
+    width: calc(50% - 20px);
+    transition: all ease .5s;
+    transform-origin: bottom;
+    height: 310px;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 0 var(--dark);
+}
+
+.service-item__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.arrow-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    transform: rotate(-24deg);
+}
+
+.arrow-link__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.arrow-link__text {
+    font-size: var(--h4-desk);
+    margin-left: 10px;
 }
