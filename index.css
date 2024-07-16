@@ -14,6 +14,7 @@ body {
 a {
     text-decoration: none;
     color: var(--dark);
+    display: block;
 }
 
 :root {
@@ -80,7 +81,6 @@ a {
     font-size: var(--h4-desk);
     margin-right: 40px;
     position: relative;
-    display: block;
 }
 
 
@@ -99,4 +99,40 @@ a {
 
 .header-navigation__link:hover::after {
     transform: scaleX(1);
+}
+
+#intro {
+    padding: 64px 0;
+    justify-content: space-between;
+}
+
+.intro-content {
+    max-width: 530px;
+}
+
+.intro-content__header {
+    font-size: var(--h1-desk);
+    line-height: calc(var(--h1-desk) * 1.5);
+}
+
+.intro-content__info {
+    font-size: var(--h4-desk);
+    line-height: calc(var(--h4-desk) * 1.5);
+    margin: 24px 0;
+    font-weight: var(--thin);
+}
+
+.intro-content__action {
+    border-radius: 14px;
+    background-color: var(--dark);
+    color: var(--white);
+    transition: all ease .5s;
+    padding: 20px 35px;
+    border: 1px solid var(--dark);
+    width: fit-content;
+}
+
+.intro-content__action:hover {
+    background-color: var(--white);
+    color: var(--dark);
 }
