@@ -87,3 +87,18 @@ a {
 .color-white {
     color: var(--white);
 }
+
+.action-button {
+    border-radius: 14px;
+    background-color: var(--dark);
+    color: var(--white);
+    transition: all ease .5s;
+    padding: 20px 35px;
+    border: 1px solid var(--dark);
+    width: fit-content;
+}
+
+.action-button:hover {
+    background-color: var(--white);
+    color: var(--dark);
+}
