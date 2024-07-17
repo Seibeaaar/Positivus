@@ -12,6 +12,10 @@ body {
     padding: 64px 100px 0;
 }
 
+.section-main {
+    margin-bottom: 120px;
+}
+
 a {
     text-decoration: none;
     color: var(--dark);

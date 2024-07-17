@@ -93,7 +93,6 @@
 
 .partner-list {
     justify-content: space-between;
-    margin-bottom: 120px;
 }
 
 .section-header__info {
@@ -152,7 +151,6 @@
     border-radius: 45px;
     padding: 60px;
     position: relative;
-    margin-top: 120px;
 }
 
 .action-content__title {
@@ -169,4 +167,39 @@
     position: absolute;
     right: 60px;
     top: -30px;
+}
+
+.cases-list {
+    border-radius: 45px;
+    padding: 70px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cases-item:not(:last-child, :first-child) {
+    border-left: 1px solid var(--white);
+    border-right: 1px solid var(--white);
+    padding: 0 64px;
+}
+
+.cases-item:first-child {
+    padding-right: 64px;
+}
+
+.cases-item:last-child {
+    padding-left: 64px;
+}
+
+.cases-item__info {
+    font-size: var(--p-desk);
+    font-weight: var(--thin);
+    margin-bottom: 24px;
+}
+
+.cases-item__arrow {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    max-width: 286px;
+    transform: rotate(335deg);
 }
