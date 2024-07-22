@@ -265,3 +265,33 @@
     margin-top: 20px;
     font-size: var(--p-desk);
 }
+
+.team-list {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.team-member {
+    border-radius: 45px;
+    border: 1px solid var(--dark);
+    padding: 40px 35px;
+    box-shadow: 0 5px 0 var(--dark);
+    flex-basis: calc(33% - 40px);
+    font-size: var(--p-desk);
+}
+
+.team-member__header {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--dark);
+    margin-bottom: 28px;
+}
+
+.team-member__name {
+    font-size: var(--h4-desk);
+}
