@@ -220,6 +220,9 @@
     cursor: pointer;
     font-size: var(--h2-desk);
     font-weight: var(--bold);
+    border: 1px solid var(--dark);
+    border-radius: 29px;
+    background-color: var(--white);
 }
 
 .toggle-icon {
@@ -294,4 +297,111 @@
 
 .team-member__name {
     font-size: var(--h4-desk);
+}
+
+.testimonials-wrapper {
+    border-radius: 45px;
+    padding: 120px 0 80px;
+    overflow: hidden;
+}
+
+.carousel {
+    gap: 40px;
+    width: fit-content;
+    position: relative;
+    transition: left ease .5s;
+    left: 0;
+}
+
+.testimonial {
+    min-width: calc(100vw - 280px);
+}
+
+.testimonial:first-child {
+    margin-left: 40px;;
+}
+
+.testimonial:last-child {
+    margin-right: 40px;;
+}
+
+.testimonial-content {
+    border-radius: 45px;
+    padding: 45px;
+    position: relative;
+    border: 1px solid var(--primary);
+    font-size: var(--p-desk);
+}
+
+.testimonial-author {
+    margin-top: 50px;
+    font-size: var(--p-desk);
+    margin-left: 40px;
+}
+
+.testimonial-author__name {
+    font-size: var(--h4-desk);
+}
+
+.tick {
+    width: 64px;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 80px;
+    background-color: var(--dark);
+    z-index: 1;
+}
+
+.tick--left {
+    border-top: 1px solid var(--primary);
+    width: 46px;
+    height: 38px;
+    position: absolute;
+    left: 80px;
+    bottom: -38px;
+    transform-origin: top left;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.tick--right {
+    border-top: 1px solid var(--primary);
+    width: 46px;
+    height: 38px;
+    position: absolute;
+    left: 98px;
+    bottom: -38px;
+    transform-origin: top right;
+    transform: rotate(-45deg);
+    z-index: 2;
+}
+
+.carousel-controller {
+    margin-top: 80px;
+    justify-content: center;
+    gap: 80px;
+}
+
+.carousel-controller__left {
+    transform: rotate(180deg);
+}
+
+.carousel-controller__btn {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.carousel-controller__dot {
+    width: 14px;
+    height: 24px;
+}
+
+.carousel-controller__dot:not(:last-child) {
+    margin-right: 14px;
+}
+
+.controller--disabled {
+    cursor: not-allowed;
 }

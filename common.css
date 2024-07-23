@@ -22,6 +22,12 @@ a {
     display: block;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
 :root {
     /* Colors */
     --primary: #B9FF66;
