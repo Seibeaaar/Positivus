@@ -12,6 +12,19 @@ body {
     padding: 64px 100px 0;
 }
 
+::-webkit-input-placeholder {
+    font-family: "Space Grotesk", sans-serif;
+}
+:-moz-placeholder {
+    font-family: "Space Grotesk", sans-serif;
+}
+::-moz-placeholder {
+    font-family: "Space Grotesk", sans-serif;
+}
+:-ms-input-placeholder {
+    font-family: "Space Grotesk", sans-serif;
+}
+
 .section-main {
     margin-bottom: 120px;
 }
@@ -28,12 +41,28 @@ button {
     outline: none;
 }
 
+input, textarea {
+    outline: none;
+    border: 1px solid var(--dark);
+    background-color: var(--white);
+    padding: 18px 30px;
+    font-size: var(--p-desk);
+    display: block;
+    width: 100%;
+    border-radius: 14px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--dark-gray);
+}
+
 :root {
     /* Colors */
     --primary: #B9FF66;
     --dark: #191A23;
     --gray: #F3F3F3;
     --white: #FFF;
+    --dark-gray: #898989;
     /* Font-size (desktop) */
     --h1-desk: 60px;
     --h2-desk: 40px;
