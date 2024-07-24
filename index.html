@@ -29,7 +29,7 @@
                 </a>
             </div>
         </header>
-        <article class="centered-flex intro">
+        <article id="about" class="centered-flex intro">
             <div class="intro-content">
                 <h1 class="intro-content__header">
                     Navigating the digital landscape for success
@@ -586,7 +586,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="section-main">
             <div class="section-header centered-flex">
                 <h2 class="section-header__title">Contact Us</h2>
                 <p class="section-header__info">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
@@ -631,8 +631,59 @@
             </div>
         </section>
     </main>
-    <footer id="footer">
-
+    <footer id="footer" class="dark-background">
+        <div class="footer-header centered-flex">
+            <div class="footer-logo centered-flex">
+                <img src="/assets/icons/Dot.svg" alt="Positivus logo" class="footer-logo__icon">
+                <h3 class="footer-logo__title white-color">Positivus</h3>
+            </div>
+            <nav class="footer-nav centered-flex">
+                <a href="#about" class="footer-nav__link">
+                    About Us
+                </a>
+                <a href="#services" class="footer-nav__link">Services</a>
+                <a href="#cases" class="footer-nav__link">Use Cases</a>
+                <a href="#processes" class="footer-nav__link">Processes</a>
+                <a href="#testimonials" class="footer-nav__link">Testimonials</a>
+            </nav>
+            <div class="footer-social centered-flex">
+                <a href="https://www.linkedin.com" class="footer-social__link" target="_blank">
+                    <img src="/assets/icons/Linkedin.svg" alt="Linkedin">
+                </a>
+                <a href="https://www.facebook.com/" class="footer-social__link" target="_blank">
+                    <img src="/assets/icons/Facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://x.com" class="footer-social__link" target="_blank">
+                    <img src="/assets/icons/Twitter.svg" alt="Twitter">
+                </a>
+            </div>
+        </div>
+        <div class="footer-content centered-flex">
+            <div class="footer-contact">
+                <h4 class="footer-contact__title color-dark">Contact us:</h4>
+                <div class="footer-contact__info">
+                    <p>Email:</p>
+                    <a class="color-white" href="mailto:info@positivus.com">info@positivus.com</a>
+                </div>
+                <div class="footer-contact__info">
+                    <p>Phone:</p>
+                    <a href="tel:555-567-8901" class="color-white">555-567-8901</a>
+                </div>
+                <div class="footer-contact__info">
+                    <p>Address:</p>
+                    <a target="_blank" class="color-white" href="http://maps.google.com/?q=1234 Main St Moonstone City, Stardust State 12345">1234 Main St
+                        Moonstone City, Stardust State 12345</a>
+                </div>
+            </div>
+            <form action="" class="footer-form centered-flex">
+                <input type="email" required class="footer-form__input" placeholder="Email">
+                <button class="footer-form__action" type="submit">Subscribe to news</button>
+            </form>
+        </div>
+        <div class="copyright centered-flex">
+            <p class="copyright-info">© 2024 Positivus. All Rights Reserved.</p>
+            <a href="https://positivus.io/legal-privacy-policy/" target="_blank" class="color-white copyright-link">Privacu policy</a>
+        </div>
     </footer>
     <script type="module" src="/js/index.js"></script>
 </body>

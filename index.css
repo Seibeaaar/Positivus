@@ -459,6 +459,7 @@
     border-radius:50%;
     padding: 0;
     position: relative;
+    cursor: pointer;
 }
 
 .contact-form__action>input::before {
@@ -473,4 +474,105 @@
 
 .contact-form__action>input:checked:before {
     background-color: var(--primary);
+}
+
+#footer {
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    padding: 55px 60px 50px;
+}
+
+.footer-header {
+    justify-content: space-between;
+}
+
+.footer-logo__icon {
+    width: 29px;
+    height: 29px;
+}
+
+.footer-logo__title {
+    font-size: var(--h3-desk);
+}
+
+.footer-nav, .footer-logo, .footer-social {
+    gap: 12px;
+}
+
+.footer-nav__link {
+    color: var(--white);
+    text-decoration: underline;
+    transform: color ease .5s;
+}
+
+.footer-nav__link:hover {
+    color: var(--primary);
+}
+
+.footer-social__link {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-content {
+    justify-content: space-between;
+    margin-top: 60px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--white);
+    align-items: stretch;
+}
+
+.footer-contact {
+    max-width: 350px;
+}
+
+.footer-contact__title {
+    font-size: var(--h4-desk);
+    background-color: var(--primary);
+    padding: 0 8px;
+    border-radius: 7px;
+    margin-bottom: 28px;
+    width: fit-content;
+}
+
+.footer-contact__info {
+    font-size: var(--p-desk);
+    font-weight: var(--thin);
+    gap: 8px;
+    display: flex;
+}
+
+.footer-contact__info:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.footer-form {
+    background-color: var(--gray-tertiary);
+    border-radius: 14px;
+    padding: 0 20px;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.footer-form__input {
+    background-color: transparent;
+    border-color: var(--white);
+    color: var(--white);
+    width: calc(50% - 9px);
+}
+
+.footer-form__action {
+    border-radius: 14px;
+    padding: 18px 30px;
+    width: calc(50% - 9px);
+    font-size: var(--p-desk);
+    transition: all ease .5s;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+}
+
+.footer-form__action:hover {
+    background-color: transparent;
+    color: var(--primary);
 }

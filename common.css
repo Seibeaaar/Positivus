@@ -39,6 +39,7 @@ button {
     background-color: transparent;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 input, textarea {
@@ -53,7 +54,7 @@ input, textarea {
 }
 
 input::placeholder, textarea::placeholder {
-    color: var(--dark-gray);
+    color: var(--gray-secondary);
 }
 
 :root {
@@ -62,7 +63,8 @@ input::placeholder, textarea::placeholder {
     --dark: #191A23;
     --gray: #F3F3F3;
     --white: #FFF;
-    --dark-gray: #898989;
+    --gray-secondary: #898989;
+    --gray-tertiary: #292A32;
     /* Font-size (desktop) */
     --h1-desk: 60px;
     --h2-desk: 40px;
@@ -140,4 +142,14 @@ input::placeholder, textarea::placeholder {
 .action-button:hover {
     background-color: var(--white);
     color: var(--dark);
+}
+
+.copyright {
+    gap: 24px;
+    font-size: var(--p-desk);
+    font-weight: var(--thik);
+}
+
+.copyright-link {
+    text-decoration: underline;
 }
