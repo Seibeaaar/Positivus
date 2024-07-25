@@ -143,13 +143,3 @@ input::placeholder, textarea::placeholder {
     background-color: var(--white);
     color: var(--dark);
 }
-
-.copyright {
-    gap: 24px;
-    font-size: var(--p-desk);
-    font-weight: var(--thik);
-}
-
-.copyright-link {
-    text-decoration: underline;
-}
