@@ -14,6 +14,18 @@ const carousel = document.querySelector('.carousel');
 let currentSlide = 1;
 let leftOffset = 0;
 
+const selectOffset = () => {
+    const screenWidth = window.innerWidth;
+    switch (true) {
+        case screenWidth < 992:
+            return 100;
+        case screenWidth < 1200:
+            return 120;
+        default:
+            return 240;
+    }
+}
+
 const handleLeftClick = () => {
     if (currentSlide === 1) return;
     const [oldDot, newDot] = [statusDots.item(currentSlide - 1), statusDots.item(currentSlide - 2)];
@@ -30,7 +42,7 @@ const handleLeftClick = () => {
         leftArrow.classList.add('controller--disabled');
     };
 
-    leftOffset += (window.innerWidth - 240);
+    leftOffset += (window.innerWidth - selectOffset());
     carousel.style.left = `${leftOffset}px`;
     currentSlide -= 1;
 };
@@ -52,7 +64,7 @@ const handleRightClick = () => {
         rightArrow.src = DISABLED_ARROW_SRC;
         rightArrow.classList.add('controller--disabled');
     };
-    leftOffset -= (window.innerWidth - 240);
+    leftOffset -= (window.innerWidth - selectOffset());
     carousel.style.left = `${leftOffset}px`;
     currentSlide += 1;
 };

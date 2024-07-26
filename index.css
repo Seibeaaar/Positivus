@@ -1,7 +1,12 @@
 @import url('./common.css');
 
 #hero {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    @media screen and (max-width: 1200px) {
+        height: 100vh;
+    }
 }
 
 .header {
@@ -61,10 +66,27 @@
 .intro {
     padding: 64px 0;
     justify-content: space-between;
+    @media screen and (max-width: 1200px) {
+        flex-direction: column-reverse;
+        text-align: center;
+        flex-grow: 1;
+    }
 }
 
 .intro-content {
     max-width: 530px;
+    @media screen and (max-width: 1200px) {
+        max-width: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.intro-content__image {
+    @media screen and (max-width: 1200px) {
+        flex-grow: 1;
+    }
 }
 
 .intro-content__header {
@@ -97,6 +119,7 @@
 
 .partner-list {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .section-header__info {
@@ -354,15 +377,21 @@
 }
 
 .testimonial {
-    min-width: calc(100vw - 280px);
+    width: calc(100vw - 280px);
+    @media screen and (max-width: 1200px) {
+        width: calc(100vw - 160px);
+    };
+    @media screen and (max-width: 992px) {
+        width: calc(100vw - 120px);
+    }
 }
 
 .testimonial:first-child {
-    margin-left: 40px;;
+    margin-left: 40px;
 }
 
 .testimonial:last-child {
-    margin-right: 40px;;
+    margin-right: 40px;
 }
 
 .testimonial-content {
