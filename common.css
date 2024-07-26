@@ -9,13 +9,6 @@
 
 body {
     font-family: "Space Grotesk", sans-serif;
-    padding: 64px 100px 0;
-    @media screen and (max-width: 1200px) {
-        padding: 20px 40px 0;
-    }
-    @media screen and (max-width: 992px) {
-        padding: 20px 20px 0;
-    }
 }
 
 ::-webkit-input-placeholder {
@@ -148,4 +141,22 @@ input::placeholder, textarea::placeholder {
 .action-button:hover {
     background-color: var(--white);
     color: var(--dark);
+}
+
+.content-spacing {
+    margin-left: 100px;
+    margin-right: 100px;
+    @media screen and (max-width: 1200px) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    @media screen and (max-width: 992px) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+main {
+    position: relative;
+    z-index: 1;
 }

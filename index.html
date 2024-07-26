@@ -10,7 +10,18 @@
 </head>
 
 <body>
-    <section id="hero">
+    <div class="mobile-navigation__overlay"></div>
+    <nav class="mobile-navigation mobile-navigation--inactive">
+        <a href="#about" class="header-navigation__link">About Us</a>
+        <a href="#services" class="header-navigation__link">Services</a>
+        <a href="#cases" class="header-navigation__link">Use Cases</a>
+        <a href="#processes" class="header-navigation__link">Processes</a>
+        <a href="#testimonials" class="header-navigation__link">Testimonials</a>
+        <a href="#contact" class="action-button">
+            Request a quote
+        </a>
+    </nav>
+    <section id="hero" class="content-spacing">
         <header class="centered-flex header">
             <div class="header-logo centered-flex">
                 <img src="./assets/icons/Logo.svg" alt="Logo" class="header-logo__image">
@@ -33,16 +44,6 @@
                 <div class="header-burger__line"></div>
                 <div class="header-burger__line"></div>
             </div>
-            <nav class="mobile-navigation">
-                <a href="#about" class="header-navigation__link">About Us</a>
-                <a href="#services" class="header-navigation__link">Services</a>
-                <a href="#cases" class="header-navigation__link">Use Cases</a>
-                <a href="#processes" class="header-navigation__link">Processes</a>
-                <a href="#testimonials" class="header-navigation__link">Testimonials</a>
-                <a href="#contact" class="action-button">
-                    Request a quote
-                </a>
-            </nav>
         </header>
         <article id="about" class="centered-flex intro">
             <div class="intro-content">
@@ -61,8 +62,8 @@
         </article>
     </section>
     <main id="main">
-        <section id="partners" class="section-main">
-            <div class="section-header">
+        <section id="partners" class="section-main content-spacing">
+            <div class="section-header centered-flex">
                 <h2 class="section-header__title">
                     Our partners
                 </h2>
@@ -88,7 +89,7 @@
                 </a>
             </div>
         </section>
-        <section id="services" class="section-main">
+        <section id="services" class="section-main content-spacing">
             <div class="section-header centered-flex">
                 <h2 class="section-header__title">Services</h2>
                 <p class="section-header__info">At our digital marketing agency, we offer a range of services to help
@@ -211,7 +212,7 @@
                 </div>
             </div>
         </section>
-        <section id="action" class="gray-background section-main">
+        <section id="action" class="gray-background section-main content-spacing">
             <h3 class="action-content__title">Let’s make things happen</h3>
             <p class="action-content__info">
                 Contact us today to learn more about how our digital marketing services can help your business grow
@@ -258,7 +259,7 @@
                 </div>
             </div>
         </section>
-        <section id="processes" class="section-main">
+        <section id="processes" class="section-main content-spacing">
             <div class="section-header centered-flex">
                 <h2 class="section-header__title">Our Working Process</h2>
                 <p class="section-header__info">Step-by-Step Guide to Achieving Your Business Goals</p>
@@ -378,7 +379,7 @@
                 </div>
             </div>
         </section>
-        <section id="team" class="section-main">
+        <section id="team" class="section-main content-spacing">
             <div class="section-header centered-flex">
                 <h2 class="section-header__title">Team</h2>
                 <p class="section-header__info">Meet the skilled and experienced team behind our successful digital
@@ -464,7 +465,7 @@
                 </div>
             </div>
         </section>
-        <section id="testimonials" class="section-main">
+        <section id="testimonials" class="section-main content-spacing">
             <div class="section-header centered-flex">
                 <h2 class="section-header__title">Testimonials</h2>
                 <p class="section-header__info">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
@@ -601,7 +602,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="section-main">
+        <section id="contact" class="section-main content-spacing">
             <div class="section-header centered-flex">
                 <h2 class="section-header__title">Contact Us</h2>
                 <p class="section-header__info">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
@@ -646,7 +647,7 @@
             </div>
         </section>
     </main>
-    <footer id="footer" class="dark-background">
+    <footer id="footer" class="dark-background content-spacing">
         <div class="footer-header centered-flex">
             <div class="footer-logo centered-flex">
                 <img src="/assets/icons/Dot.svg" alt="Positivus logo" class="footer-logo__icon">
