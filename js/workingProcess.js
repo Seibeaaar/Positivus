@@ -1,3 +1,5 @@
+import { toggleCSSClass } from "./utils.js";
+
 const INACTIVE_CLASS = 'process-item__info--inactive';
 const GRAY_BACKGROUND_CLASS = 'gray-background';
 const PRIMARY_BACKGROUND_CLASS = 'primary-background';
@@ -7,15 +9,6 @@ const MINUS_ICON_SRC = '/assets/icons/Minus.svg';
 
 
 const workProcessItems = document.querySelectorAll('.process-item');
-
-const toggleCSSClass = (e, className, alternative) => {
-    const classNameUsed = e.classList.contains(className);
-    classNameUsed ? e.classList.remove(className) : e.classList.add(className);
-
-    if (!!alternative) {
-        classNameUsed ? e.classList.add(alternative) : e.classList.remove(alternative);
-    }
-};
 
 const handleWorkProcessClick = (event, container) => {
     if (!event.target || !['toggle-button', 'toggle-icon'].includes(event.target.accessKey)) return;
