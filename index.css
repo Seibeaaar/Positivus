@@ -910,3 +910,23 @@
 .copyright-link {
     text-decoration: underline;
 }
+
+.scroll-top {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    z-index: 4;
+    border: 1px solid var(--dark);
+}
+
+.scroll-top--inactive {
+    display: none;
+}
