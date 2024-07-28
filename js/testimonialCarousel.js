@@ -18,7 +18,7 @@ const selectOffset = () => {
     const screenWidth = window.innerWidth;
     switch (true) {
         case screenWidth < 992:
-            return 100;
+            return 80;
         case screenWidth < 1200:
             return 120;
         default:
